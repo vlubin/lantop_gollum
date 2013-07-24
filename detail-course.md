@@ -1,6 +1,7 @@
 查看课程详细资料JSON接口(HTTP GET Mothed)：
 
-**### URL**
+URL
+====
 http://192.168.100.48:1092/v3/course/list/infos
 
 **### 参数说明：**
