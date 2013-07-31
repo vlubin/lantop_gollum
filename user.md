@@ -47,3 +47,26 @@ URL
 无
 
 ******
+
+#3、用户登录#
+
+URL
+====
+[ex] http://192.168.100.48:1092/v3/user/login?loginname=18616568180&password=e10adc3949ba59abbe56e057f20f883e&client=1
+
+###支持格式 `JSON`
+
+###HTTP请求方式 `GET`
+
+参数说明
+====
+
++ **登录名**: `loginname` (用户的手机号码)
++ **时间戳**: `password`   （MD5加密）
++ **客户端类型**: `client`  （1，Android; 2，iOS）
+
+相关说明
+===
+T(type == 1)：老师； S(type == 2)，学生
+
+******
