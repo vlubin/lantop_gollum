@@ -124,11 +124,15 @@ URL
 
 
 ******
-#1、查看课程详细资料JSON接口#
+
+#话题-GET集合#
+
+
+#6、取跟我相关的话题（最新话题）列表#
 
 URL
 ====
-[ex] http://192.168.100.48:1092/v3/course/list/infos?uid=5&cid=28&from=0&t=t&client=1
+[ex] http://192.168.100.48:1092/v3/sns/topics?uid=5&t=&p=1
 
 ###支持格式 `JSON`
 
@@ -138,21 +142,42 @@ URL
 ====
 
 + **用户ID**: `uid` 
-+ **课程ID**: `cid`
-+ **时间戳**: `from`   （Timestamp类型的）
-+ **加密验证**：`token`  
-+ **客户端类型**: `client`  （1，Android; 2，iOS）
++ **页码**: `p`
+
+相关说明
+===
+p=1 页码
+
+******
+
+
+#7、取公开的话题（发掘话题）列表#
+
+URL
+====
+[ex] http://192.168.100.48:1092/v3/sns/topics/all?uid=12&t=&p=1
+
+###支持格式 `JSON`
+
+###HTTP请求方式 `GET`
+
+参数说明
+====
+
++ **用户ID**: `uid` 
++ **页码**: `p`
++ **加密验证**：`t`  
 
 相关说明
 ===
 无
 
 ******
-#1、查看课程详细资料JSON接口#
+#8、取课程相关的话题列表（话题 - 课程）#
 
 URL
 ====
-[ex] http://192.168.100.48:1092/v3/course/list/infos?uid=5&cid=28&from=0&t=t&client=1
+[ex] http://192.168.100.48:1092/v3/sns/topics/course/2?uid=5&t=&p=1
 
 ###支持格式 `JSON`
 
@@ -162,21 +187,21 @@ URL
 ====
 
 + **用户ID**: `uid` 
-+ **课程ID**: `cid`
-+ **时间戳**: `from`   （Timestamp类型的）
-+ **加密验证**：`token`  
-+ **客户端类型**: `client`  （1，Android; 2，iOS）
++ **页码**: `p`
++ **加密验证**：`t`  
 
 相关说明
 ===
-无
++ course/2? 2-课程ID
 
 ******
-#1、查看课程详细资料JSON接口#
+
+
+#9、取用户创建的话题列表（用户信息 - 话题）#
 
 URL
 ====
-[ex] http://192.168.100.48:1092/v3/course/list/infos?uid=5&cid=28&from=0&t=t&client=1
+[ex] http://192.168.100.48:1092/v3/sns/topics/user/154?uid=12&t=&p=38
 
 ###支持格式 `JSON`
 
@@ -186,21 +211,20 @@ URL
 ====
 
 + **用户ID**: `uid` 
-+ **课程ID**: `cid`
-+ **时间戳**: `from`   （Timestamp类型的）
-+ **加密验证**：`token`  
-+ **客户端类型**: `client`  （1，Android; 2，iOS）
++ **页码**: `p`
++ **加密验证**：`t`  
 
 相关说明
 ===
-无
++ user/5? 5-用户ID
 
 ******
-#1、查看课程详细资料JSON接口#
+
+#10、取话题的回复列表#
 
 URL
 ====
-[ex] http://192.168.100.48:1092/v3/course/list/infos?uid=5&cid=28&from=0&t=t&client=1
+[ex] http://192.168.100.48:1092/v3/sns/topic/11050/replies?uid=12&t=&p=1
 
 ###支持格式 `JSON`
 
@@ -210,13 +234,11 @@ URL
 ====
 
 + **用户ID**: `uid` 
-+ **课程ID**: `cid`
-+ **时间戳**: `from`   （Timestamp类型的）
-+ **加密验证**：`token`  
-+ **客户端类型**: `client`  （1，Android; 2，iOS）
++ **页码**: `p`
++ **加密验证**：`t`  
 
 相关说明
 ===
-无
++ topic/11050 11050-话题ID
 
 ******
