@@ -29,7 +29,7 @@ URL
 ====
 [ex] http://192.168.100.48:1092/v3/course/category/list?from=0&t=t&client=1
 
-###支持格式 `Paramater`
+###支持格式 `JSON`
 
 ###HTTP请求方式 `GET`
 
@@ -52,7 +52,7 @@ URL
 ====
 [ex] http://192.168.100.48:1092/v3/course/myselected/list?uid=5&from=0&t=t&client=1
 
-###支持格式 `Paramater`
+###支持格式 `JSON`
 
 ###HTTP请求方式 `GET`
 
@@ -126,7 +126,7 @@ URL
 ====
 [ex] http://192.168.100.48:1092/v3/course/recommend
 
-###支持格式 `Paramater`
+###支持格式 `JSON`
 
 ###HTTP请求方式 `GET`
 
@@ -143,7 +143,7 @@ URL
 [ex] http://192.168.100.48:1092/v3/course/comment?uid=1&t=222&course=1&star=1
 
 
-###支持格式 `Paramater`
+###支持格式 `JSON`
 
 ###HTTP请求方式 `GET`
 
@@ -167,7 +167,7 @@ URL
 ====
 [ex] http://192.168.100.48:1092/v3/course/share?uid=1&t=1&course=1&receiver=1
 
-###支持格式 ``
+###支持格式 `JSON`
 
 ###HTTP请求方式 `GET`
 
@@ -191,7 +191,7 @@ URL
 ====
 [ex] http://192.168.100.48:1092/v3/course/open/list/c0?uid=12&t=1&p=2&order=0
 
-###支持格式 ``
+###支持格式 `JSON`
 
 ###HTTP请求方式 `GET`
 
@@ -201,8 +201,8 @@ URL
 + **用户ID**: `uid` 
 + **课程ID**: `course`
 + **加密验证**：`t` 
-+ **?**：`p` 
-+ **?**：`order` 
++ **分页页码**：`p` ，从1开始 
++ **排序**：`order` 
 
 相关说明
 ===
