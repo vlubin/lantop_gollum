@@ -182,9 +182,9 @@ URL
 
 相关说明
 ===
-@FormDataParam("file" ) InputStream uploadedInputStream,
-@FormDataParam("file" ) FormDataContentDisposition fileDetail,
-@FormDataParam ("content") String content
++ @FormDataParam("file" ) InputStream uploadedInputStream,
++ @FormDataParam("file" ) FormDataContentDisposition fileDetail,
++ @FormDataParam ("content") String content
 
 ******
 
@@ -204,12 +204,11 @@ topic=1375608440613&chat=1375608440613&friend=1375608440613
 
 相关说明
 ===
-@param fromTimestampOfNotice
-@param fromTimestampOfTopic
-@param fromTimestampOfChat
-@param fromTimestampOfFriendRequest
++ @param fromTimestampOfNotice
++ @param fromTimestampOfTopic
++ @param fromTimestampOfChat
++ @param fromTimestampOfFriendRequest
 ******
-
 
 
 
