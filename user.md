@@ -72,3 +72,26 @@ URL
 + 学生：type == 2，S
 
 ******
+
+#4、LandingPage#
+
+URL
+====
+[ex] http://192.168.100.48:1092/v3/user/config/get?uid=5&t=t&client=1
+
+###支持格式 `JSON`
+
+###HTTP请求方式 `GET`
+
+参数说明
+====
+
++ **用户ID**: `uid` 
++ **Token**: `t`   
++ **客户端类型**: `client`  （1，Android; 2，iOS）
+
+相关说明
+===
++ 该接口在Landing时，取用户的配置接口，以及Landing Image URL等。
+
+******
