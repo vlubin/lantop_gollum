@@ -153,7 +153,7 @@ URL
 
 URL
 ====
-[ex] http://localhost:8082/v3/user/profile/update
+[ex] http://192.168.100.48:1092/v3/user/profile/update
 
 ###支持格式 `JSON`
 
