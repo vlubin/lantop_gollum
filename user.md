@@ -166,6 +166,7 @@ URL
 + **意见反馈内容**: `gender` (性别：0未知；1男；2女)
 + **意见反馈内容**: `birthday` (时间格式：yyyy-MM-dd)
 + **城市代码**: `city`
++ **文件**: `file`   
 + **Token**: `t`   
 + **客户端类型**: `client`  （1，Android; 2，iOS）
 
