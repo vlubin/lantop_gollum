@@ -148,3 +148,38 @@ URL
 
 ******
 
+
+
+
+
+
+
+
+******
+
+#7、更新个人设置#
+
+URL
+====
+[ex] http://localhost:8082/v3/user/profile/update
+
+###支持格式 `JSON`
+
+###HTTP请求方式 `GET`
+
+参数说明
+====
+
++ **用户ID**: `uid` 
++ **意见反馈内容**: `gender` (性别：0未知；1男；2女)
++ **意见反馈内容**: `birthday` (时间格式：yyyy-MM-dd)
++ **城市代码**: `city`
++ **Token**: `t`   
++ **客户端类型**: `client`  （1，Android; 2，iOS）
+
+相关说明
+===
++ 更新用户生日、所在城市、性别，以及用户ICON（两个ICON, icon:100 * 100像素的，iconLarge:130*130像素）
++ PORT数据类型：multipart/form-data
+
+******
