@@ -172,6 +172,6 @@ URL
 相关说明
 ===
 + 更新用户生日、所在城市、性别，以及用户ICON（两个ICON, icon:100 * 100像素的，iconLarge:130*130像素）
-+ PORT数据类型：multipart/form-data
++ POST数据类型：multipart/form-data
 
 ******
