@@ -24,3 +24,31 @@ URL
 无
 
 ******
+
+
+#2、课件帧列表多媒体数据的JSON接口#
+
+URL
+====
+[ex] http://192.168.100.48:1092/v3/course/courseware/1/frames?uid=5&from=0&t=t&client=1
+
+### 'http://192.168.100.48:1092/v3/course/courseware/{cwid}/frames?uid=5&from=0&t=t&client=1'
+
+###支持格式 `JSON`
+
+###HTTP请求方式 `GET`
+
+参数说明
+====
+
++ **用户ID**: `uid` 
++ **课件ID**: `cwid`
++ **时间戳**: `from`   （Timestamp类型的）
++ **加密验证**：`token`  
++ **客户端类型**: `client`  （1，Android; 2，iOS）
+
+相关说明
+===
+无
+
+******
