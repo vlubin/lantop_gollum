@@ -13,7 +13,7 @@ URL
 
 + **用户ID**: `uid` 
 + **原密码**: `password`
-+ **新密码**: `newpassword`   （Timestamp类型的）
++ **新密码**: `newpassword`   
 + **加密验证**：`token`  
 + **客户端类型**: `client`  （1，Android; 2，iOS）
 
@@ -38,7 +38,7 @@ URL
 
 + **登录名**: `loginname` （手机号码或用户名）
 + **新密码**: `password`
-+ **重置码**: `code`   （Timestamp类型的）
++ **重置码**: `code`   
 + **客户端类型**: `client`  （1，Android; 2，iOS）
 
 相关说明
