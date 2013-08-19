@@ -61,3 +61,38 @@ JSON字段描述:
 
 
 ******
+
+
+#3、提交作业并返回结果的JSON接口#
+
+URL
+====
+[ex] http://192.168.100.48:1092/v3/course/1/homework/1/result?uid=5&totalScore=100&score=70&t=t&client=1
+
+###URL `http://192.168.100.48:1092/v3/course/{cid}/homework/{hwid}/result?uid=5&totalScore=100&score=70&t=t&client=1`
+
+###支持格式 `JSON`
+
+###HTTP请求方式 `GET`
+
+参数说明
+====
+
++ **用户ID**: `uid` 
++ **课程ID**: `cid`
++ **作业ID**: `hwid`
++ **作业总分**: `totalScore`
++ **答题得分**: `score`
++ **加密验证**：`t`  
++ **客户端类型**: `client`  （1，Android; 2，iOS）
+
+相关说明
+===
+JSON字段描述:
++ **作业ID**:'id'（int）
++ **作业是否完成**: `finished` (int: 0, 未完成; 1, 已完成)
++ **作业是否过期**: `overdue' (int: 0, 未过期; 1, 已过期）
++ **作业主键**: `submitTime' (java.lang.String）
++ **参入该作业的我的好友列表**:'friends'
+
+******
