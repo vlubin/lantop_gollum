@@ -48,39 +48,16 @@ URL
 
 相关说明
 ===
-JSON字段描述
-"id": 1,(习题主键，int)
-"originalId": 1,
-"homeworkId": 1,（主页ID，int）
-"title": "我的练习题",
-"type": 0, （int，习题类型：0，单选；1，多选；2，是非判断题）
-"scoreAmount": 10,（int，本题分数）
-"explanation": null,（答题解析）
-"addition": [
-    {
-        "id": 1,（答案顺序）
-        "description": "dfsadsa"（答案）
-    },
-    {
-        "id": 2,
-        "description": "dasdsa"
-    },
-    {
-        "id": 3,
-        "description": "dsadsa"
-    },
-    {
-        "id": 4,
-        "description": "dsadsa"
-    }
+JSON字段描述:
++ **作业习题主键**: `id` (int)
++ **作业主键**: `homeworkId' (int）
++ **作业主键**: `title' (java.lang.String）
++ **习题类型**:'type'（int，习题类型：0，单选；1，多选；2，是非判断题）
++ **本题分数**:'scoreAmount'（int）
++ **本题解析**:'explanation'（答题解析）
++ **答题选项**:'addition'（答题选项：id, 顺序； description， 答题选项内容）
++ **答案**:'answer'（Y，正确答案； N，错误答案）
 
-],
-"answer": [
-    "Y",（正确答案）
-    "N",
-    "N",
-    "N"
 
-]
 
 ******
