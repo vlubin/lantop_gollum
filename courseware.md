@@ -51,7 +51,7 @@ URL
 + **加密验证**：`token`  
 + **客户端类型**: `client`  （1，Android; 2，iOS）
 
-相关说明
+相关说明(返回的JSON字段)
 ===
 + **资源的路径**: `resourceUrl`  （当资源类型为MP4，或MP3时，作为下载资源的路径）
 + **MP3资源的路径**: `audioUrl`  （如果资源类型为MP3时，作为下载资源的路径，此时背景图的路径为：resourceUrl）
