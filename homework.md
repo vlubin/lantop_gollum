@@ -100,7 +100,7 @@ JSON字段描述:
 + **作业是否过期**: `overdue' (int: 0, 未过期; 1, 已过期）
 + **上一个作业主键**: `previousHomeworkId' (int, 如果为0表示，第一个，没有上一组了）
 + **下一个作业主键**: `nextHomeworkId' (int, 如果为0表示最后一个，没有下一组了）
-+ **作业主键**: `submitTime' (java.lang.String）
++ **作业提交时间**: `submitTime' (java.lang.String）
 + **参入该作业的我的好友列表**:'friends'
 
 ******
