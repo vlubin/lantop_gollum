@@ -102,9 +102,9 @@ URL
 
 URL
 ====
-[ex] http://192.168.100.48:1092/v3/course/654/courseware/773/exercise/submit?uid=5&score=35&t=t&client=1
+[ex] http://192.168.100.48:1092/v3/course/654/courseware/773/exercise/submit?uid=5&correct=4&score=35&t=t&client=1
 
-### 'http://192.168.100.48:1092/v3/course/{cid}/courseware/{cwid}/exercise/submit?uid=5&score=35&t=t&client=1'
+### 'http://192.168.100.48:1092/v3/course/{cid}/courseware/{cwid}/exercise/submit?uid=5&correct=4&score=35&t=t&client=1'
 
 ###支持格式 `JSON`
 
@@ -116,6 +116,7 @@ URL
 + **用户ID**: `uid` 
 + **课程ID**: `cid`
 + **课件ID**: `cwid`
++ **正确答题数**: `correct`   （int）
 + **答题得分**: `score`   （int, 习题得分）
 + **加密验证**：`t`  
 + **客户端类型**: `client`  （1，Android; 2，iOS）
@@ -123,7 +124,8 @@ URL
 相关说明(返回的JSON字段)
 ===
 + **课件ID**: `id`  
-+ **答题参与人数**: `answerAmount`  
++ **课件习题数**: `exerciseCount`  
++ **正确答题数**: `correctCount` 
 + **本次答题得分率**: `scoringAverage`  （int，百分比）
 + **上一组习题的课件ID**: `previousCoursewareId`  （视频播放之前的背景图）
 + **下一组习题的课件ID**: `nextCoursewareId`  （答题解析）
@@ -155,11 +157,6 @@ URL
 
 相关说明(返回的JSON字段)
 ===
-+ **课件ID**: `id`  
-+ **答题参与人数**: `answerAmount`  
-+ **本次答题得分率**: `scoringAverage`  （int，百分比）
-+ **上一组习题的课件ID**: `previousCoursewareId`  （视频播放之前的背景图）
-+ **下一组习题的课件ID**: `nextCoursewareId`  （答题解析）
-+ **参入答题的好友**: `friends`  （答题选项：id, 顺序； description， 答题选项内容；如果为是非题的话，那么该字段为null）
+返回的JSON字段与提交课件系统的接口返回字段相同，字段含义相同
 
 ******
