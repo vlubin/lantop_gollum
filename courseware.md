@@ -62,3 +62,104 @@ URL
 + **课件帧顺序**: `serialNumber`  （升序排序，如果为-1的话，那么为图片压缩包，不作为帧）
 
 ******
+
+#3、课件习题列表的JSON接口#
+
+URL
+====
+[ex] http://192.168.100.48:1092/v3/course/654/courseware/773/exercise/list?uid=5&from=0&t=t&client=1
+
+### 'http://192.168.100.48:1092/v3/course/{cid}/courseware/{cwid}/exercise/list?uid=5&from=0&t=t&client=1'
+
+###支持格式 `JSON`
+
+###HTTP请求方式 `GET`
+
+参数说明
+====
+
++ **用户ID**: `uid` 
++ **课程ID**: `cid`
++ **课件ID**: `cwid`
++ **时间戳**: `from`   （Timestamp类型的）
++ **加密验证**：`t`  
++ **客户端类型**: `client`  （1，Android; 2，iOS）
+
+相关说明(返回的JSON字段)
+===
++ **习题ID**: `id`  
++ **习题标题**: `title`  
++ **习题类型**: `type`  （int，习题类型：0，单选；1，多选；2，是非判断题）
++ **视频资源的图片**: `score`  （视频播放之前的背景图）
++ **答题解析**: `explanation`  （答题解析）
++ **课件帧顺序**: `addition`  （答题选项：id, 顺序； description， 答题选项内容；如果为是非题的话，那么该字段为null）
++ **课件帧顺序**: `answer`  （id:答案顺序，answer：Y，正确答案； N，错误答案；如果为是非题的话，那么该字段为取值范围为Y或N）
+
+******
+
+
+#4、提交课件习题并返回的JSON接口#
+
+URL
+====
+[ex] http://192.168.100.48:1092/v3/course/654/courseware/773/exercise/submit?uid=5&score=35&t=t&client=1
+
+### 'http://192.168.100.48:1092/v3/course/{cid}/courseware/{cwid}/exercise/submit?uid=5&score=35&t=t&client=1'
+
+###支持格式 `JSON`
+
+###HTTP请求方式 `GET`
+
+参数说明
+====
+
++ **用户ID**: `uid` 
++ **课程ID**: `cid`
++ **课件ID**: `cwid`
++ **答题得分**: `score`   （int, 习题得分）
++ **加密验证**：`t`  
++ **客户端类型**: `client`  （1，Android; 2，iOS）
+
+相关说明(返回的JSON字段)
+===
++ **课件ID**: `id`  
++ **答题参与人数**: `answerAmount`  
++ **本次答题得分率**: `scoringAverage`  （int，百分比）
++ **上一组习题的课件ID**: `previousCoursewareId`  （视频播放之前的背景图）
++ **下一组习题的课件ID**: `nextCoursewareId`  （答题解析）
++ **参入答题的好友**: `friends`  （答题选项：id, 顺序； description， 答题选项内容；如果为是非题的话，那么该字段为null）
+
+******
+
+
+#5、提交课件习题并返回的JSON接口#
+
+URL
+====
+[ex] http://192.168.100.48:1092/v3/course/654/courseware/773/exercise/result?uid=5&t=t&client=1
+
+### 'http://192.168.100.48:1092/v3/course/{cid}/courseware/{cwid}/exercise/result?uid=5&t=t&client=1'
+
+###支持格式 `JSON`
+
+###HTTP请求方式 `GET`
+
+参数说明
+====
+
++ **用户ID**: `uid` 
++ **课程ID**: `cid`
++ **课件ID**: `cwid`
++ **加密验证**：`t`  
++ **客户端类型**: `client`  （1，Android; 2，iOS）
+
+相关说明(返回的JSON字段)
+===
++ **课件ID**: `id`  
++ **答题参与人数**: `answerAmount`  
++ **本次答题得分率**: `scoringAverage`  （int，百分比）
++ **上一组习题的课件ID**: `previousCoursewareId`  （视频播放之前的背景图）
++ **下一组习题的课件ID**: `nextCoursewareId`  （答题解析）
++ **参入答题的好友**: `friends`  （答题选项：id, 顺序； description， 答题选项内容；如果为是非题的话，那么该字段为null）
+
+******
