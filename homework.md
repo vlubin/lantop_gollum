@@ -112,7 +112,7 @@ URL
 ====
 [ex] http://192.168.100.48:1092/v3/course/1/homework/1/result?uid=5&t=t&client=1
 
-###URL `http://192.168.100.48:1092/v3/course/{cid}/homework/{oid}/result?uid=5&t=t&client=1`
+###URL `http://192.168.100.48:1092/v3/course/{cid}/homework/{hwid}/result?uid=5&t=t&client=1`
 
 ###支持格式 `JSON`
 
@@ -123,7 +123,7 @@ URL
 
 + **用户ID**: `uid` 
 + **课程ID**: `cid`
-+ **作业originalId**: `oid` (在作业列表中，对于完成的作业，点击时，查看结果，此时要用到originalId参数)
++ **作业Id**: `hwid` (int, 作业ID)
 + **加密验证**：`t`  
 + **客户端类型**: `client`  （1，Android; 2，iOS）
 
