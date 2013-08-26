@@ -27,7 +27,7 @@ URL
 
 URL
 ====
-[ex] http://192.168.100.48:1092/v3/msg/notice/20119/read?uid=12&t=
+[ex] http://192.168.100.48:1092/v3/msg/notice/20119/read?uid=12&t=&client=1
 
 ###支持格式 `JSON`
 
@@ -37,8 +37,7 @@ URL
 ====
 
 + **用户ID**: `uid` 
-+ **课程ID**: `cid`
-+ **时间戳**: `from`   （Timestamp类型的）
++ **消息ID**: /notice/**20119**/
 + **加密验证**：`token`  
 + **客户端类型**: `client`  （1，Android; 2，iOS）
 
