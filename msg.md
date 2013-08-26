@@ -19,7 +19,7 @@ URL
 
 相关说明
 ===
-无
+返回对象的status : 0:未读 1:已读
 
 ******
 
@@ -209,5 +209,4 @@ topic=1375608440613&chat=1375608440613&friend=1375608440613
 + @param fromTimestampOfFriendRequest
 
 ******
-
 
