@@ -13,7 +13,10 @@ URL
 参数说明
 ====
 
-+ **用户ID**: `uid` 
++ **作业进度**: `homeworkProgress` (int类型，百分比)
++ **作业列表**: `homeworks` 
+
+作业列表字段如下：
 + **课程ID**: `cid`
 + **时间戳**: `from`   （Timestamp类型的）
 + **加密验证**：`token`  
