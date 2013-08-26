@@ -27,7 +27,7 @@ URL
 
 URL
 ====
-[ex] http://192.168.100.48:1092/v3/course/category/list?from=0&t=t&client=1
+[ex] http://192.168.100.48:1092/v3/course/category/list?uid=5&from=0&t=t&client=1
 
 ###支持格式 `JSON`
 
@@ -36,6 +36,7 @@ URL
 参数说明
 ====
 
++ **用户ID**: `uid` 
 + **时间戳**: `from`   （Timestamp类型的）
 + **加密验证**：`token`  
 + **客户端类型**: `client`  （1，Android; 2，iOS）
@@ -216,7 +217,7 @@ URL
 
 URL
 ====
-[ex] http://192.168.100.48:1092/v3/course/other/list?fid=5&p=1&from=0&t=t&client=1
+[ex] http://192.168.100.48:1092/v3/course/other/list?uid=5&fid=5&p=1&from=0&t=t&client=1
 
 ###支持格式 `JSON`
 
@@ -225,6 +226,7 @@ URL
 参数说明
 ====
 
++ **用户ID**: `uid` 
 + **好友ID**: `fid` 
 + **时间戳**: `from`   （Timestamp类型的）
 + **加密验证**：`t`  
