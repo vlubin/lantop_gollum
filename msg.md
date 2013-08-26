@@ -191,22 +191,27 @@ URL
 
 URL
 ====
-[ex] http://192.168.100.48:1092/v3/msg/hasnewuid=12&t=&notice=1375608440613&
-topic=1375608440613&chat=1375608440613&friend=1375608440613
+[ex] 
+
+各种消息是否有新内容(time传0不计算）
+http://192.168.100.48:1092/v3/msg/hasnew?uid=12&t=&notic=1375608440613&topic=1375608440613&chat=1375608440613&friend=1375608440613&version=4
+
 ###支持格式 `JSON`
 
 ###HTTP请求方式 `GET`
 
 参数说明
 ====
-？？？
+notice 是否有新通知（底部菜单）
+topic 我的课程小组里是否有新话题（底部菜单）
+topic4me 是否有新的跟我相关的话题，回复我的或AT我的（消息-话题）
+chat 是否有新私信
+friendRequest 是否有新好友请求
+course 是否有新课程
+release 是否有新版本
 
 相关说明
 ===
-+ @param fromTimestampOfNotice
-+ @param fromTimestampOfTopic
-+ @param fromTimestampOfChat
-+ @param fromTimestampOfFriendRequest
+
 
 ******
-
