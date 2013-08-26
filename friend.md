@@ -27,7 +27,7 @@ URL
 
 URL
 ====
-[ex] http://192.168.100.48:1092/v3/friend/other/list?fid=5&p=1&from=0&t=t&client=1
+[ex] http://192.168.100.48:1092/v3/friend/other/list?uid=5&fid=5&p=1&from=0&t=t&client=1
 
 ###支持格式 `JSON`
 
@@ -36,6 +36,7 @@ URL
 参数说明
 ====
 
++ **用户ID**: `uid`
 + **好友ID**: `fid` 
 + **时间戳**: `from`   （Timestamp类型的）
 + **加密验证**：`t`  
@@ -220,4 +221,3 @@ URL
 相关说明
 ===
 + 传入真实时间戳
-
