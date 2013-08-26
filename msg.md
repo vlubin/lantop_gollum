@@ -27,7 +27,7 @@ URL
 
 URL
 ====
-[ex] http://192.168.100.48:1092/v3/course/list/infos?uid=5&cid=28&from=0&t=t&client=1
+[ex] http://192.168.100.48:1092/v3/msg/notice/20119/read?uid=12&t=
 
 ###支持格式 `JSON`
 
@@ -210,6 +210,5 @@ topic=1375608440613&chat=1375608440613&friend=1375608440613
 + @param fromTimestampOfFriendRequest
 
 ******
-
 
 
