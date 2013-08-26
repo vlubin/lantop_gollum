@@ -21,6 +21,8 @@ URL
 
 相关说明
 ===
++ **考试数**: `examinationCount` 
++ **考试列表**: `examinations` ，考试列表字段如下：
 + **文档格式**: `format` (如果为null，那么建议处理为未知)
 + **文档版本**: `version` (如果大于本地的version，那么为更新的)
 + **文档地址**: `url` (完整资源路径地址)
