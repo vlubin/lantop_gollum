@@ -13,10 +13,6 @@ URL
 参数说明
 ====
 
-+ **作业进度**: `homeworkProgress` (int类型，百分比)
-+ **作业列表**: `homeworks` 
-
-作业列表字段如下：
 + **课程ID**: `cid`
 + **时间戳**: `from`   （Timestamp类型的）
 + **加密验证**：`token`  
@@ -24,7 +20,10 @@ URL
 
 相关说明
 ===
-+ **作业ORIGID**: `originalId` (因作业可能会有好多版本，因此对于已经完成的作业，查看结果时，要用该参数)
++ **作业进度**: `homeworkProgress` (int类型，百分比)
++ **作业列表**: `homeworks` 
+
+作业列表字段如下：
 + **是否完成**: `finished` (0,未完成; 1,已完成)
 
 ******
