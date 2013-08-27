@@ -102,9 +102,9 @@ URL
 
 URL
 ====
-[ex] http://192.168.100.48:1092/v3/course/654/courseware/773/exercise/submit?uid=5&correct=4&score=35&t=t&client=1
+[ex] http://192.168.100.48:1092/v3/course/1/courseware/26/exercise/submit?uid=5&type=2&correct=4&score=35&t=t&client=1
 
-### 'http://192.168.100.48:1092/v3/course/{cid}/courseware/{cwid}/exercise/submit?uid=5&correct=4&score=35&t=t&client=1'
+### 'http://192.168.100.48:1092/v3/course/{cid}/courseware/{cwid}/exercise/submit?uid=5&type=1&correct=4&score=35&t=t&client=1'
 
 ###支持格式 `JSON`
 
@@ -116,6 +116,7 @@ URL
 + **用户ID**: `uid` 
 + **课程ID**: `cid`
 + **课件ID**: `cwid`
++ **课件类型**: `type` (1，多媒体；2，习题；3，多媒体+习题)
 + **正确答题数**: `correct`   （int）
 + **答题得分**: `score`   （int, 习题得分）
 + **加密验证**：`t`  
