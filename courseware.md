@@ -90,7 +90,7 @@ URL
 + **课件ID**: `coursewareId`
 + **课件名**: `courseName`
 + **课件版本**: `version`
-+ **习题列表**: `exercises`
++ **习题列表**: `exercises` (习题列表， JSONArray)
 
 
 习题列表的JSON字段:
