@@ -81,9 +81,7 @@ URL
 
 URL
 ====
-[ex] http://192.168.100.48:1092/v3/friend/relation/5/7/add?from=0&t=t&client=1
-
-### 接口参数 'http://192.168.100.48:1092/v3/friend/relation/{uid}/{fid}/add?from=0&t=t&client=1'
+[ex] http://192.168.100.48:1092/v3/friend/relation/add?uid=5&fid=1,2,3,4,6,7&from=0&t=t&client=1
 
 ###支持格式 `JSON`
 
@@ -93,7 +91,7 @@ URL
 ====
 
 + **发起人ID**: `uid` 
-+ **目标好友ID**: `fid` 
++ **目标好友ID**: `fid` (多个好友ID：使用半角的,隔开)
 + **时间戳**: `from`   （Timestamp类型的）
 + **加密验证**：`t`  
 + **客户端类型**: `client`  （1，Android; 2，iOS）
@@ -112,9 +110,9 @@ URL
 
 URL
 ====
-[ex] http://192.168.100.48:1092/v3/friend/relation/7/5/agree?from=0&t=t&client=1
+[ex] http://192.168.100.48:1092/v3/friend/relation/5/agree?uid=7&from=0&t=t&client=1
 
-### 接口参数 'http://192.168.100.48:1092/v3/friend/relation/{uid}/{fid}/agree?from=0&t=t&client=1'
+### 接口参数 'http://192.168.100.48:1092/v3/friend/relation/{fid}/agree?uid=7&from=0&t=t&client=1'
 
 ###支持格式 `JSON`
 
@@ -143,9 +141,9 @@ URL
 
 URL
 ====
-[ex] http://192.168.100.48:1092/v3/friend/relation/5/7/refuse?from=0&t=t&client=1
+[ex] http://192.168.100.48:1092/v3/friend/relation/7/refuse?uid=5&from=0&t=t&client=1
 
-### 接口参数 'http://192.168.100.48:1092/v3/friend/relation/{uid}/{fid}/refuse?from=0&t=t&client=1'
+### 接口参数 'http://192.168.100.48:1092/v3/friend/relation/{fid}/refuse?uid=5from=0&t=t&client=1'
 
 ###支持格式 `JSON`
 
@@ -174,9 +172,9 @@ URL
 
 URL
 ====
-[ex] http://192.168.100.48:1092/v3/friend/relation/5/7/delete?from=0&t=t&client=1
+[ex] http://192.168.100.48:1092/v3/friend/relation/7/delete?uid=5&from=0&t=t&client=1
 
-### 接口参数 'http://192.168.100.48:1092/v3/friend/relation/{uid}/{fid}/delete?from=0&t=t&client=1'
+### 接口参数 'http://192.168.100.48:1092/v3/friend/relation/{fid}/delete?uid=5&from=0&t=t&client=1'
 
 ###支持格式 `JSON`
 
