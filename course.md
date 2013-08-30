@@ -244,7 +244,7 @@ URL
 
 URL
 ====
-[ex] http://192.168.100.48:1092/v3/course/ranking/list?uid=5&cid=27&p=3&from=0&t=t&client=1
+[ex] http://192.168.100.48:1092/v3/course/ranking/list?uid=5&cid=2&p=1&from=0&t=t&client=1
 
 ###支持格式 `JSON`
 
