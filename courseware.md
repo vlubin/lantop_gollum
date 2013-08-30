@@ -67,7 +67,7 @@ URL
 
 URL
 ====
-[ex] http://192.168.100.48:1092/v3/course/654/courseware/773/exercise/list?uid=5&from=0&t=t&client=1
+[ex] http://192.168.100.48:1092/v3/course/1/courseware/26/exercise/list?uid=5&from=0&t=t&client=1
 
 ### 'http://192.168.100.48:1092/v3/course/{cid}/courseware/{cwid}/exercise/list?uid=5&from=0&t=t&client=1'
 
@@ -86,6 +86,14 @@ URL
 + **客户端类型**: `client`  （1，Android; 2，iOS）
 
 相关说明(返回的JSON字段)
+===
++ **课件ID**: `coursewareId`
++ **课件名**: `courseName`
++ **课件版本**: `version`
++ **习题列表**: `exercises`
+
+
+习题列表的JSON字段:
 ===
 + **习题ID**: `id`  
 + **习题标题**: `title`  
