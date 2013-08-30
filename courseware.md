@@ -147,7 +147,7 @@ URL
 
 URL
 ====
-[ex] http://192.168.100.48:1092/v3/course/654/courseware/773/exercise/result?uid=5&t=t&client=1
+[ex] http://192.168.100.48:1092/v3/course/1/courseware/26/exercise/result?uid=5&t=t&client=1
 
 ### 'http://192.168.100.48:1092/v3/course/{cid}/courseware/{cwid}/exercise/result?uid=5&t=t&client=1'
 
