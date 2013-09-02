@@ -126,9 +126,7 @@ URL
 
 URL
 ====
-[ex] http://192.168.100.48:1092/v3/user/5/feedback?content=abcdefg&t=t&client=1
-
-### `http://192.168.100.48:1092/v3/user/{uid}/feedback?content=abcdefg&t=t&client=1`
+[ex] http://192.168.100.48:1092/v3/user/feedback?uid=5&content=abcdefg&t=t&client=1
 
 ###支持格式 `JSON`
 
