@@ -2,7 +2,7 @@
 
 URL
 ====
-[ex] http://192.168.100.48:1092/v3/user/password/update?uid=5&password=5f560d46fc03bd4f9f8ead5e0bc65ec9&newpassword=e10adc3949ba59abbe56e057f20f883e&t=t&client=1
+[ex] http://192.168.100.48:1092/v3/user/password/update?uid=5&password=5f560d46fc03bd4f9f8ead5e0bc65ec9&newpassword=e10adc3949ba59abbe56e057f20f883e&t=89D8FA86DDE18B59&client=1
 
 ###支持格式 `JSON`
 
@@ -14,7 +14,7 @@ URL
 + **用户ID**: `uid` 
 + **原密码**: `password`
 + **新密码**: `newpassword`   
-+ **加密验证**：`token`  
++ **加密验证**：`t`  
 + **客户端类型**: `client`  （1，Android; 2，iOS）
 
 相关说明
