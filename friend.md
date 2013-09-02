@@ -80,7 +80,7 @@ URL
 
 URL
 ====
-[ex] http://192.168.100.48:1092/v3/friend/relation/add?uid=5&fid=1,2,3,4,6,7&from=0&t=t&client=1
+[ex] http://192.168.100.48:1092/v3/friend/relation/add?uid=5&fid=1,2,3,4,6,7&from=0&t=89D8FA86DDE18B59&client=1
 
 ###支持格式 `JSON`
 
@@ -109,9 +109,9 @@ URL
 
 URL
 ====
-[ex] http://192.168.100.48:1092/v3/friend/relation/5/agree?uid=7&from=0&t=t&client=1
+[ex] http://192.168.100.48:1092/v3/friend/relation/5/agree?uid=7&from=0&t=89D8FA86DDE18B59&client=1
 
-### 接口参数 'http://192.168.100.48:1092/v3/friend/relation/{fid}/agree?uid=7&from=0&t=t&client=1'
+### 接口参数 'http://192.168.100.48:1092/v3/friend/relation/{fid}/agree?uid=7&from=0&t=89D8FA86DDE18B59&client=1'
 
 ###支持格式 `JSON`
 
@@ -140,9 +140,9 @@ URL
 
 URL
 ====
-[ex] http://192.168.100.48:1092/v3/friend/relation/7/refuse?uid=5&from=0&t=t&client=1
+[ex] http://192.168.100.48:1092/v3/friend/relation/7/refuse?uid=5&from=0&t=89D8FA86DDE18B59&client=1
 
-### 接口参数 'http://192.168.100.48:1092/v3/friend/relation/{fid}/refuse?uid=5from=0&t=t&client=1'
+### 接口参数 'http://192.168.100.48:1092/v3/friend/relation/{fid}/refuse?uid=5from=0&t=89D8FA86DDE18B59&client=1'
 
 ###支持格式 `JSON`
 
@@ -171,9 +171,9 @@ URL
 
 URL
 ====
-[ex] http://192.168.100.48:1092/v3/friend/relation/7/delete?uid=5&from=0&t=t&client=1
+[ex] http://192.168.100.48:1092/v3/friend/relation/7/delete?uid=5&from=0&t=89D8FA86DDE18B59&client=1
 
-### 接口参数 'http://192.168.100.48:1092/v3/friend/relation/{fid}/delete?uid=5&from=0&t=t&client=1'
+### 接口参数 'http://192.168.100.48:1092/v3/friend/relation/{fid}/delete?uid=5&from=0&t=89D8FA86DDE18B59&client=1'
 
 ###支持格式 `JSON`
 
@@ -200,7 +200,7 @@ URL
 
 URL
 ====
-[ex] http://192.168.100.48:1092/v3/friend/request/list?uid=5&p=1&from=0&t=t&client=1
+[ex] http://192.168.100.48:1092/v3/friend/request/list?uid=5&p=1&from=0&t=89D8FA86DDE18B59&client=1
 
 ###支持格式 `JSON`
 
