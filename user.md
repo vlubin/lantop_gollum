@@ -2,7 +2,7 @@
 
 URL
 ====
-[ex] http://192.168.100.48:1092/v3/user/my/home?uid=5&from=0&t=t&client=1
+[ex] http://192.168.100.48:1092/v3/user/my/home?uid=5&from=0&t=89D8FA86DDE18B59&client=1
 
 ###支持格式 `JSON`
 
@@ -27,7 +27,7 @@ URL
 
 URL
 ====
-[ex] http://192.168.100.48:1092/v3/user/friend/home?uid=5&fid=12&from=0&t=t&client=1
+[ex] http://192.168.100.48:1092/v3/user/friend/home?uid=5&fid=12&from=0&t=89D8FA86DDE18B59&client=1
 
 ###支持格式 `JSON`
 
@@ -77,7 +77,7 @@ URL
 
 URL
 ====
-[ex] http://192.168.100.48:1092/v3/user/config/get?uid=5&t=t&client=1
+[ex] http://192.168.100.48:1092/v3/user/config/get?uid=5&t=89D8FA86DDE18B59&client=1
 
 ###支持格式 `JSON`
 
@@ -100,7 +100,7 @@ URL
 
 URL
 ====
-[ex] http://192.168.100.48:1092/v3/user/privacy/setting?uid=5&dp=2&dt=2&dm=2&t=t&client=1
+[ex] http://192.168.100.48:1092/v3/user/privacy/setting?uid=5&dp=2&dt=2&dm=2&t=89D8FA86DDE18B59&client=1
 
 ###支持格式 `JSON`
 
@@ -126,7 +126,7 @@ URL
 
 URL
 ====
-[ex] http://192.168.100.48:1092/v3/user/feedback?uid=5&content=abcdefg&t=t&client=1
+[ex] http://192.168.100.48:1092/v3/user/feedback?uid=5&content=abcdefg&t=89D8FA86DDE18B59&client=1
 
 ###支持格式 `JSON`
 
