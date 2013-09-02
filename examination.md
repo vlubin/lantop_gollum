@@ -2,7 +2,7 @@
 
 URL
 ====
-[ex] http://192.168.100.48:1092/v3/course/24/exam/list?uid=5&from=0&t=t&client=1
+[ex] http://192.168.100.48:1092/v3/course/24/exam/list?uid=5&from=0&t=89D8FA86DDE18B59&client=1
 
 ###URL `http://192.168.100.48:1092/v3/course/{cid}/exam/list?uid=5&from=0&t=t&client=1`
 
@@ -16,7 +16,7 @@ URL
 + **用户ID**: `uid` 
 + **课程ID**: `cid`
 + **时间戳**: `from`   （Timestamp类型的）
-+ **加密验证**：`token`  
++ **加密验证**：`t`  
 + **客户端类型**: `client`  （1，Android; 2，iOS）
 
 相关说明
