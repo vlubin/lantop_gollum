@@ -4,9 +4,6 @@ URL
 ====
 [ex] http://192.168.100.48:1092/v3/upgrade/1/detection?uid=5&client=1&t=89D8FA86DDE18B59
 
-
-URL 'http://192.168.100.48:1092/v3/upgrade/{version}/detection?uid=5&client=1&t=t'
-
 ###支持格式 `JSON`
 
 ###HTTP请求方式 `GET`
