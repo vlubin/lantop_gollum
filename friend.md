@@ -53,7 +53,7 @@ URL
 
 URL
 ====
-[ex] http://192.168.100.48:1092/v3/friend/recommend/list?uid=5&p=3&from=0&t=t&client=1
+[ex] http://192.168.100.48:1092/v3/friend/recommend/list?uid=5&from=0&t=t&client=1
 
 ###支持格式 `JSON`
 
@@ -63,14 +63,13 @@ URL
 ====
 
 + **用户ID**: `fid` 
-+ **分页页码**: `p` 
 + **时间戳**: `from`   （Timestamp类型的）
 + **加密验证**：`t`  
 + **客户端类型**: `client`  （1，Android; 2，iOS）
 
 相关说明
 ===
-+ 该接口用于推荐的好友列表，每页显示8个，分页显示
+随机返回8个推荐的学生，8个推荐的教师
 
 
 
