@@ -2,7 +2,7 @@
 
 URL
 ====
-[ex] http://192.168.100.48:1092/v3/course/list/infos?uid=5&cid=28&from=0&t=t&client=1
+[ex] http://192.168.100.48:1092/v3/course/list/infos?uid=5&cid=28&from=0&t=89D8FA86DDE18B59&client=1
 
 ###支持格式 `JSON`
 
@@ -14,7 +14,7 @@ URL
 + **用户ID**: `uid` 
 + **课程ID**: `cid`
 + **时间戳**: `from`   （Timestamp类型的）
-+ **加密验证**：`token`  
++ **加密验证**：`t`  
 + **客户端类型**: `client`  （1，Android; 2，iOS）
 
 相关说明
@@ -27,7 +27,7 @@ URL
 
 URL
 ====
-[ex] http://192.168.100.48:1092/v3/course/category/list?uid=5&from=0&t=t&client=1
+[ex] http://192.168.100.48:1092/v3/course/category/list?uid=5&from=0&t=89D8FA86DDE18B59&client=1
 
 ###支持格式 `JSON`
 
@@ -38,7 +38,7 @@ URL
 
 + **用户ID**: `uid` 
 + **时间戳**: `from`   （Timestamp类型的）
-+ **加密验证**：`token`  
++ **加密验证**：`t`  
 + **客户端类型**: `client`  （1，Android; 2，iOS）
 
 相关说明
@@ -51,7 +51,7 @@ URL
 
 URL
 ====
-[ex] http://192.168.100.48:1092/v3/course/myselected/list?uid=5&from=0&t=t&client=1
+[ex] http://192.168.100.48:1092/v3/course/myselected/list?uid=5&from=0&t=89D8FA86DDE18B59&client=1
 
 ###支持格式 `JSON`
 
@@ -62,7 +62,7 @@ URL
 
 + **用户ID**: `uid` 
 + **时间戳**: `from`   （Timestamp类型的）
-+ **加密验证**：`token`  
++ **加密验证**：`t`  
 + **客户端类型**: `client`  （1，Android; 2，iOS）
 
 相关说明
@@ -75,7 +75,7 @@ URL
 
 URL
 ====
-[ex] http://192.168.100.48:1092/v3/course/list/add?uid=5&cid=28&from=0&t=t&client=1
+[ex] http://192.168.100.48:1092/v3/course/list/add?uid=5&cid=28&from=0&t=89D8FA86DDE18B59&client=1
 
 ###支持格式 `JSON`
 
@@ -87,7 +87,7 @@ URL
 + **用户ID**: `uid` 
 + **课程ID**: `cid`
 + **时间戳**: `from`   （Timestamp类型的）
-+ **加密验证**：`token`  
++ **加密验证**：`t`  
 + **客户端类型**: `client`  （1，Android; 2，iOS）
 
 相关说明
@@ -100,7 +100,7 @@ URL
 
 URL
 ====
-[ex] http://192.168.100.48:1092/v3/course/list/delete?uid=5&cid=28&from=0&t=t&client=1
+[ex] http://192.168.100.48:1092/v3/course/list/delete?uid=5&cid=28&from=0&t=89D8FA86DDE18B59&client=1
 
 ###支持格式 `JSON`
 
@@ -112,7 +112,7 @@ URL
 + **用户ID**: `uid` 
 + **课程ID**: `cid`
 + **时间戳**: `from`   （Timestamp类型的）
-+ **加密验证**：`token`  
++ **加密验证**：`t`  
 + **客户端类型**: `client`  （1，Android; 2，iOS）
 
 相关说明
@@ -141,7 +141,7 @@ type 1课程 2活动
 
 URL
 ====
-[ex] http://192.168.100.48:1092/v3/course/comment?uid=1&t=222&course=1&star=1
+[ex] http://192.168.100.48:1092/v3/course/comment?uid=5&t=89D8FA86DDE18B59&course=1&star=1
 
 
 ###支持格式 `JSON`
@@ -153,7 +153,7 @@ URL
 
 + **用户ID**: `uid` 
 + **课程ID**: `course`
-+ **加密验证**：`token` 
++ **加密验证**：`t` 
 + **星级**： `star`
 
 相关说明
@@ -177,7 +177,7 @@ URL
 
 + **用户ID**: `uid` 
 + **课程ID**: `course`
-+ **加密验证**：`token`  
++ **加密验证**：`t`  
 + **?**：`receiver`  
 
 相关说明
