@@ -190,7 +190,9 @@ URL
 
 URL
 ====
-[ex] http://192.168.100.48:1092/v3/course/open/list/c{category }?uid=5&t=2&p=2&order=0&client=1
+[ex] http://192.168.100.48:1092/v3/course/open/list/c0?uid=5&t=89D8FA86DDE18B59&p=1&order=0&client=1
+
+### URL格式 'http://192.168.100.48:1092/v3/course/open/list/c{category}?uid=5&t=89D8FA86DDE18B59&p=1&order=0&client=1'
 
 ###支持格式 `JSON`
 
@@ -203,7 +205,7 @@ URL
 + **课程分类ID**: `category` （如果为0，取全部）
 + **加密验证**：`t`  
 + **分页页码**：`p` ，从1开始 
-+ **排序**：`order` （0按课程创建时间排序；1按课件数降序；2按话题数降序；3按成员数降序；4按评分值降序 ）
++ **排序**：`order` （0按课程创建时间排序；1，最多下载；2，最多关注；3，最高评分 ）
 + **客户端类型**: `client`  （1，Android; 2，iOS）
 
 相关说明
