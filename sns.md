@@ -340,7 +340,7 @@ android 已经调用#8，IOS用此接口，android可以考虑转换用该接口
 
 URL
 ====
-[ex] http://192.168.100.48:1092/v3/sns/act/topic/addwithpic?uid=12&t=
+[ex] http://192.168.100.48:1092/v3/sns/act/topic/add/withpic?uid=12&t=
 
 ###支持格式 `JSON`
 
