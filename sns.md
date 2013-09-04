@@ -335,3 +335,33 @@ android 已经调用#8，IOS用此接口，android可以考虑转换用该接口
 ******
 
 
+******
+#15、新增话题（带图片）#
+
+URL
+====
+[ex] http://192.168.100.48:1092/v3/sns/act/topic/addwithpic?uid=12&t=
+
+###支持格式 `JSON`
+
+###HTTP请求方式 `POST`
+
+参数说明
+====
+
++ **用户ID**: `uid` 
++ **页码**: `p`
++ **加密验证**：`t`  
+
+@FormDataParam("uid") int userId, @FormDataParam("t") String token,
+			@FormDataParam("file") InputStream uploadedInputStream,
+			@FormDataParam("file") FormDataContentDisposition fileDetail,
+			@FormDataParam("course") int courseId,
+			@FormDataParam("content") String content);
+
+相关说明
+===
+
+******
+
+
