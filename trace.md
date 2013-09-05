@@ -67,6 +67,24 @@ URL
 ******
 
 
+#日志-课程-作业下载#
+
+URL
+====
+[ex] http://192.168.100.48:1092/v3/trace/course/1/exam/1/download?uid=5&t=89D8FA86DDE18B59&&device=device_number
+
+###支持格式 `JSON`
+
+###HTTP请求方式 `GET`
+
+参数说明
+====
+
+相关说明
+===
+无
+
+******
 
 
 
