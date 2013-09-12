@@ -169,3 +169,32 @@ URL
 返回的JSON字段与提交课件系统的接口返回字段相同，字段含义相同
 
 ******
+
+
+#5、删除课件时，删除课件习题的JSON接口#
+
+URL
+====
+[ex] http://192.168.100.48:1092/v3/course/1/courseware/26/exercise/delete?uid=5&type=2&t=89D8FA86DDE18B59&client=1
+
+### 'http://192.168.100.48:1092/v3/course/{cid}/courseware/{cwid}/exercise/delete?uid=5&type=2&t=89D8FA86DDE18B59&client=1
+
+###支持格式 `JSON`
+
+###HTTP请求方式 `GET`
+
+参数说明
+====
+
++ **用户ID**: `uid` 
++ **课程ID**: `cid`
++ **课件ID**: `cwid`
++ **课件类型**: `type` (课件类型：1，多媒体；2，习题；3，多媒体+习题)
++ **加密验证**：`t`  
++ **客户端类型**: `client`  （1，Android; 2，iOS）
+
+相关说明(返回的JSON字段)
+===
+客户端删除下载完成的课件时，删除服务器上用户对于该课件的习题答题
+
+******
