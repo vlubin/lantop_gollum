@@ -96,7 +96,7 @@ JSON字段描述:
 + **作业总分**:'totalScore'（int）
 + **正确答题数**:'correctCount'（int）
 + **答题得分**:'score'（int）
-+ **实际得分**:'validScore'（int，如果作业过期，会有一定的规则）
++ **实际得分**:'realScore'（int，如果作业过期，会有一定的规则）
 + **得分率**:'scoringAverage'（int，显示百分比）
 + **作业是否完成**: `finished` (int: 0, 未完成; 1, 已完成)
 + **作业是否过期**: `overdue' (int: 0, 未过期; 1, 已过期）
