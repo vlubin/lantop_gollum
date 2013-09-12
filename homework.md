@@ -94,7 +94,7 @@ JSON字段描述:
 + **作业ID**:'id'（int）
 + **作业下的习题数**:'exerciseCount'（int）
 + **作业总分**:'totalScore'（int）
-+ **正确答题数**:'correct'（int）
++ **正确答题数**:'correctCount'（int）
 + **答题得分**:'score'（int）
 + **实际得分**:'validScore'（int，如果作业过期，会有一定的规则）
 + **得分率**:'scoringAverage'（int，显示百分比）
