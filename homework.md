@@ -51,10 +51,9 @@ URL
 + **客户端类型**: `client`  （1，Android; 2，iOS）
 
 相关说明
-=================
+====
 JSON字段描述:
 + **作业信息**: `homework` (JSON Object finished， 0未完成；1，已完成)
-=================
 + **作业的习题列表**: `exercises` (JSON Array)
 + **作业习题主键**: `id` (int)
 + **作业主键**: `homeworkId' (int）
