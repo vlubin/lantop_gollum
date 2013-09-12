@@ -82,7 +82,7 @@ URL
 + **用户ID**: `uid` 
 + **课程ID**: `cid`
 + **作业ID**: `hwid`
-+ **正确答题数**: `correctCount`
++ **正确答题数**: `correct`
 + **答题得分**: `score`
 + **答案**: `answer` (JSON 格式的字符串:[{id:1, answer:"1"},{id:2, answer:"1,2,4"},{id:3, answer:"Y"}] )
 + **加密验证**：`t`  
