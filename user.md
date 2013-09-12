@@ -205,3 +205,29 @@ URL
 + POST数据类型：multipart/form-data
 
 ******
+
+
+#9、LandingPage Image#
+
+URL
+====
+[ex] http://192.168.100.48:1092/v3/user/langding/page/image?uid=5&w=1024&h=768&client=1&t=89D8FA86DDE18B59
+
+###支持格式 `JSON`
+
+###HTTP请求方式 `GET`
+
+参数说明
+====
+
++ **用户ID**: `uid` 
++ **意见反馈内容**: `w` (宽度：像素)
++ **意见反馈内容**: `h` (高度：像素)
++ **客户端类型**: `client`  （1，Android; 2，iOS）
++ **Token**: `t`   
+
+相关说明
+===
+获取用户所在学校的图片
+
+******
