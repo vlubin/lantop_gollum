@@ -32,9 +32,9 @@ URL
 
 URL
 ====
-[ex] http://192.168.100.48:1092/v3/course/homework/1/exercises?uid=5&from=0&t=89D8FA86DDE18B59&client=1
+[ex] http://192.168.100.48:1092/v3/course/1/homework/1/exercises?uid=5&from=0&t=89D8FA86DDE18B59&client=1
 
-###URL `http://192.168.100.48:1092/v3/course/homework/{hwid}/exercises?uid=5&from=0&t=t&client=1`
+###URL `http://192.168.100.48:1092/v3/course/{cid}/homework/{hwid}/exercises?uid=5&from=0&t=t&client=1`
 
 ###支持格式 `JSON`
 
@@ -44,14 +44,18 @@ URL
 ====
 
 + **用户ID**: `uid` 
++ **课程ID**: `cid`
 + **作业ID**: `hwid`
 + **时间戳**: `from`   （Timestamp类型的）
 + **加密验证**：`t`  
 + **客户端类型**: `client`  （1，Android; 2，iOS）
 
 相关说明
-===
+=================
 JSON字段描述:
++ **作业信息**: `homework` (JSON Object finished， 0未完成；1，已完成)
+=================
++ **作业的习题列表**: `exercises` (JSON Array)
 + **作业习题主键**: `id` (int)
 + **作业主键**: `homeworkId' (int）
 + **习题标题**: `title' (java.lang.String）
