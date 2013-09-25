@@ -53,7 +53,7 @@ URL
 
 URL
 ====
-[ex] http://192.168.100.48:1092/v3/course/myselected/list?uid=5&from=0&t=89D8FA86DDE18B59&client=1
+[ex] http://192.168.100.48:1092/v3/course/myselected/list?uid=5&from=0&t=89D8FA86DDE18B59&client=1&search=英语
 
 ###支持格式 `JSON`
 
@@ -66,6 +66,7 @@ URL
 + **时间戳**: `from`   （Timestamp类型的）
 + **加密验证**：`t`  
 + **客户端类型**: `client`  （1，Android; 2，iOS）
++ **搜索关键字**: `search`  （按课程名搜索，如果为null，取全部）
 
 相关说明
 ===
