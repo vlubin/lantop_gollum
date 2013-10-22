@@ -248,8 +248,6 @@ URL
 参数说明
 ====
 
-+ **登录名**: `loginname` (用户的手机号码)
-+ **密码**: `password`   （MD5加密）
 + **客户端类型**: `client`  （1，Android; 2，iOS）
 
 相关说明
