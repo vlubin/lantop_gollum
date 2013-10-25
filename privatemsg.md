@@ -52,9 +52,9 @@ from 上一次取该列表的时间，用于判断分组私信是否有更新
 
 URL
 ====
-[ex] http://192.168.100.48:1092/v3/msg/chat/with154/page?uid=5&p=2&t=89D8FA86DDE18B59
+[ex] http://192.168.100.48:1092/v3/msg/chat/with154/page?uid=5&p=1&t=89D8FA86DDE18B59
 
-URL 'http://192.168.100.48:1092/v3/msg/chat/with{fuid}/page?uid=5&p=2&t=89D8FA86DDE18B59'
+URL 'http://192.168.100.48:1092/v3/msg/chat/with{fuid}/page?uid=5&p=1&t=89D8FA86DDE18B59'
 
 ###支持格式 `JSON`
 
