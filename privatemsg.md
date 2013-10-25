@@ -125,3 +125,29 @@ URL 'http://192.168.100.48:1092/v3/msg/chat/with{receiver}/send?uid=5&t=89D8FA86
 + @FormDataParam ("content") String content
 
 ******
+
+#6、跟新我和好友的私信(好友作为发送人时的私信)为已读#
+
+URL
+====
+[ex] http://192.168.100.48:1092/v3/msg/chat/with154/readed?uid=5&t=89D8FA86DDE18B59&client=1
+
+URL 'http://192.168.100.48:1092/v3/msg/chat/with{fid}/readed?uid=5&t=89D8FA86DDE18B59&client=1'
+
+###支持格式 `JSON`
+
+###HTTP请求方式 `POST`
+
+参数说明
+====
+
++ **用户ID**: `uid` 
++ **接受者(好友)ID**：`fid`
++ **加密验证**：`t`  
++ **客户端类型**：`client` （1，Android； 2，IOS）
+
+相关说明
+===
+接口执行成功后，返回1
+
+******
