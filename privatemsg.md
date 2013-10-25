@@ -29,7 +29,7 @@ URL 'http://192.168.100.48:1092/v3/msg/chat/with{fid}/share{cid}?uid=5&t=89D8FA8
 
 URL
 ====
-[ex] http://192.168.100.48:1092/v3/msg/chat/group?uid=12&p=1&from=1375601464938
+[ex] http://192.168.100.48:1092/v3/msg/chat/group?uid=5&p=1&from=1375601464938&t=89D8FA86DDE18B59
 
 ###支持格式 `JSON`
 
@@ -39,8 +39,8 @@ URL
 ====
 
 + **用户ID**: `uid` 
-+ **时间戳**：`from`  
-+ **分页**: `p`
++ **时间戳**：`from` 
++ **分页**: `p` (从1开始)
 
 相关说明
 ===
@@ -52,7 +52,8 @@ from 上一次取该列表的时间，用于判断分组私信是否有更新
 
 URL
 ====
-[ex] http://192.168.100.48:1092/v3/msg/chat/with154/page?uid=12&p=2
+[ex] http://192.168.100.48:1092/v3/msg/chat/with154/page?uid=5&p=2&t=89D8FA86DDE18B59
+URL 'http://192.168.100.48:1092/v3/msg/chat/with{fuid}/page?uid=5&p=2&t=89D8FA86DDE18B59'
 
 ###支持格式 `JSON`
 
@@ -63,6 +64,7 @@ URL
 
 + **用户ID**: `uid`  
 + **分页**: `p`
++ **好友ID**: `fuid`
 
 相关说明
 ===
@@ -74,7 +76,8 @@ with154 154为对方ID
 
 URL
 ====
-[ex] http://192.168.100.48:1092/v3/msg/chat/with154/sendtext?uid=12&t=&content=hello
+[ex] http://192.168.100.48:1092/v3/msg/chat/with7/sendtext?uid=5&t=89D8FA86DDE18B59&content=hello
+URL 'http://192.168.100.48:1092/v3/msg/chat/with{receiver}/sendtext?uid=5&t=89D8FA86DDE18B59&content=hello'
 
 ###支持格式 `JSON`
 
@@ -86,6 +89,7 @@ URL
 + **用户ID**: `uid` 
 + **加密验证**：`t`  
 + **内容**: `content`
++ **接受者(好友)ID**：`receiver`  
 
 相关说明
 ===
@@ -97,17 +101,19 @@ with154 154为对方ID
 
 URL
 ====
-[ex] http://192.168.100.48:1092/v3/msg/chat/with154/send?uid=12&t=
+[ex] http://192.168.100.48:1092/v3/msg/chat/with7/send?uid=5&t=89D8FA86DDE18B59
+URL 'http://192.168.100.48:1092/v3/msg/chat/with{receiver}/send?uid=5&t=89D8FA86DDE18B59'
 
 ###支持格式 `JSON`
 
-###HTTP请求方式 `GET`
+###HTTP请求方式 `POST`
 
 参数说明
 ====
 
 + **用户ID**: `uid` 
 + **加密验证**：`t`  
++ **接受者(好友)ID**：`receiver`  
 
 相关说明
 ===
