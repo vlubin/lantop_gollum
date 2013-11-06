@@ -193,7 +193,7 @@ URL
 
 URL
 ====
-[ex] http://192.168.100.48:1092/v3/course/open/list/c0?uid=5&t=89D8FA86DDE18B59&p=1&order=0&client=1&search=英语
+[ex] http://192.168.100.48:1092/v3/course/open/list/c0?uid=5&t=89D8FA86DDE18B59&p=1&order=0&client=1&search=英语&open=0
 
 ### URL格式 'http://192.168.100.48:1092/v3/course/open/list/c{category}?uid=5&t=89D8FA86DDE18B59&p=1&order=0&client=1'&search=英语
 
@@ -211,6 +211,7 @@ URL
 + **排序**：`order` （0按课程创建时间排序；1，最多下载；2，最多关注；3，最高评分 ）
 + **客户端类型**: `client`  （1，Android; 2，iOS）
 + **课程名搜索**: `search`  （为null时，分页列表所有，否则按照参数指定的内容检索）
++ **搜索公开课类型**: `open`  （0，默认，所有；1，授权课；2，完全公开课）
 相关说明
 ===
 无
