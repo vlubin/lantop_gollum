@@ -242,7 +242,6 @@ URL
 
 相关说明
 ===
-无
++ **搜索范围**：`ydxy_user.enableWkt=1,ydxy_user.name`
 
 ****
-
