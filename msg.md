@@ -98,7 +98,7 @@ URL
 
 URL
 ====
-[ex] http://192.168.100.48:1092/v3/msg/hasnew?uid=5&t=89D8FA86DDE18B59&notic=1375608440613&topic=1375608440613&chat=1375608440613&friend=1375608440613&version=4
+[ex] http://192.168.100.48:1092/v3/msg/hasnew?uid=5&t=89D8FA86DDE18B59&notic=1375608440613&topic=1375608440613&chat=1375608440613&friend=1375608440613&schedule=1375608440613&version=4
 
 各种消息是否有新内容(time传0不计算）
 
@@ -112,8 +112,9 @@ URL
 + **TOKEN**: `t`  （TOKEN）
 + **通知**: `notice`  （Timestamp类型，是否有新通知）
 + **话题**: `topic`  （Timestamp类型，我的课程小组里是否有新话题）
-+ **用户ID**: `chat`  （Timestamp类型，<b>(传0)</b>）
-+ **用户ID**: `friend`  （Timestamp类型，<b>(传0)</b>）
++ **是否有最新私信**: `chat`  （Timestamp类型，<b>(传0)</b>）
++ **是否有好友请求**: `friend`  （Timestamp类型，<b>(传0)</b>）
++ **新任务**: `schedule`  （Timestamp类型，<b>(传上次进入任务列表时，接口返回的时间戳)</b>）
 + **用户ID**: `version`  （客户端当前版本）
 
 相关说明(JSON View 字段)
