@@ -49,11 +49,11 @@ URL
 
 ****
 
-#3、推荐的好友列表#
+#3、推荐的好友列表(学生和教师)#
 
 URL
 ====
-[ex] http://192.168.100.48:1092/v3/friend/recommend/list?uid=5&from=0&t=89D8FA86DDE18B59&client=1
+[ex] http://192.168.100.48:1092/v3/friend/recommend/list?uid=5&from=0&t=89D8FA86DDE18B59&client=1&type=1
 
 ###支持格式 `JSON`
 
@@ -66,6 +66,7 @@ URL
 + **时间戳**: `from`   （Timestamp类型的）
 + **加密验证**：`t`  
 + **客户端类型**: `client`  （1，Android; 2，iOS）
++ **用户类型**: `type`  （1，为教师，不传该参数时为学生）
 
 相关说明
 ===
