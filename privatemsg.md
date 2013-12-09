@@ -151,3 +151,57 @@ URL 'http://192.168.100.48:1092/v3/msg/chat/with{fid}/readed?uid=5&t=89D8FA86DDE
 接口执行成功后，返回1
 
 ******
+
+#7、删除我与某好友整组的私信#
+
+URL
+====
+[ex] http://192.168.100.48:1092/v3/msg/chat/with154/group/delete?uid=5&client=1&t=89D8FA86DDE18B59
+
+URL 'http://192.168.100.48:1092/v3/msg/chat//with{fid}/group/delete?uid=5&client=1&t=89D8FA86DDE18B59'
+
+###支持格式 `JSON`
+
+###HTTP请求方式 `POST`
+
+参数说明
+====
+
++ **用户ID**: `uid` 
++ **好友ID**：`fid`
++ **加密验证**：`t`  
++ **客户端类型**：`client` （1，Android； 2，IOS）
+
+相关说明
+===
+接口执行成功后，返回1
+
+******
+
+#8、删除我与某好友的某一条的私信#
+
+URL
+====
+[ex] http://192.168.100.48:1092/v3/msg/chat/with154/chat20000/delete?uid=5&client=1&t=89D8FA86DDE18B59
+
+URL 'http://192.168.100.48:1092/v3/msg/chat/with{fid}/chat{cid}/delete?uid=5&client=1&t=89D8FA86DDE18B59'
+
+###支持格式 `JSON`
+
+###HTTP请求方式 `POST`
+
+参数说明
+====
+
++ **用户ID**: `uid` 
++ **好友ID**：`fid`
++ **私信ID**：`cid`
++ **加密验证**：`t`  
++ **客户端类型**：`client` （1，Android； 2，IOS）
+
+相关说明
+===
+接口执行成功后，返回1
+
+******
+
