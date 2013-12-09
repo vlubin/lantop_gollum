@@ -162,7 +162,7 @@ URL 'http://192.168.100.48:1092/v3/msg/chat//with{fid}/group/delete?uid=5&client
 
 ###支持格式 `JSON`
 
-###HTTP请求方式 `POST`
+###HTTP请求方式 `GET`
 
 参数说明
 ====
@@ -188,7 +188,7 @@ URL 'http://192.168.100.48:1092/v3/msg/chat/with{fid}/chat{cid}/delete?uid=5&cli
 
 ###支持格式 `JSON`
 
-###HTTP请求方式 `POST`
+###HTTP请求方式 `GET`
 
 参数说明
 ====
