@@ -158,7 +158,7 @@ URL
 ====
 [ex] http://192.168.100.48:1092/v3/msg/chat/with154/group/delete?uid=5&client=1&t=89D8FA86DDE18B59
 
-URL 'http://192.168.100.48:1092/v3/msg/chat//with<b>{fid}</b>/group/delete?uid=5&client=1&t=89D8FA86DDE18B59'
+URL 'http://192.168.100.48:1092/v3/msg/chat//with{fid}/group/delete?uid=5&client=1&t=89D8FA86DDE18B59'
 
 ###支持格式 `JSON`
 
@@ -184,7 +184,7 @@ URL
 ====
 [ex] http://192.168.100.48:1092/v3/msg/chat/with154/chat20000/delete?uid=5&client=1&t=89D8FA86DDE18B59
 
-URL 'http://192.168.100.48:1092/v3/msg/chat/with<b>{fid}</b>/chat<b>{cid}</b>/delete?uid=5&client=1&t=89D8FA86DDE18B59'
+URL 'http://192.168.100.48:1092/v3/msg/chat/with{fid}/chat{cid}/delete?uid=5&client=1&t=89D8FA86DDE18B59'
 
 ###支持格式 `JSON`
 
