@@ -275,7 +275,7 @@ URL
 
 URL
 ====
-[ex] http://192.168.100.48:1092/v3/friend/schoolmate/list?uid=5&p=1&t=89D8FA86DDE18B59&client=1
+[ex] http://192.168.100.48:1092/v3/friend/schoolmate/list?uid=5&p=1&t=89D8FA86DDE18B59&client=1&search=张三
 
 ###支持格式 `JSON`
 
@@ -287,6 +287,7 @@ URL
 + **用户ID**: `uid` 我的ID
 + **分页页码**: `p` 页码从1开始
 + **加密验证**：`t`  
++ **搜索姓名**：`search`  (搜索好友的姓名，模糊匹配)
 + **客户端类型**: `client`  （1，Android; 2，iOS）
 
 JSON View描述
