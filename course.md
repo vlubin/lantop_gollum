@@ -255,7 +255,7 @@ URL
 
 URL
 ====
-[ex] http://192.168.100.48:1092/v3/course/ranking/list?uid=5&cid=2&p=1&from=0&t=t&client=1
+[ex] http://192.168.100.48:1092/v3/course/ranking/list?uid=5&cid=2&p=1&from=0&t=t&client=1&type=1
 
 ###支持格式 `JSON`
 
@@ -265,6 +265,7 @@ URL
 ====
 
 + **用户ID**: `uid` 
++ **用户类型**: `type`  <b>（传参数type=1,取教师角色排名；不传，或传type=2,为学生业务逻辑）</b>
 + **课程ID**: `cid` 
 + **页码**: `p`        （从1开始）
 + **时间戳**: `from`   （Timestamp类型的）
@@ -273,7 +274,8 @@ URL
 
 相关说明
 ===
-无
++ **我的排行**: `myRanking`  (教师业务逻辑：为-999，那么为此时隐藏我的排名；学生逻辑，为0时，显示暂无排名)
++ **排行列表**: `rankings`  (各用户的排行数据， 教师业务逻辑： rankings.progres，rankings.ranking为-999，隐藏学习进度和进度条；学生逻辑：显示学习进度和进度条
 
 ******
 
