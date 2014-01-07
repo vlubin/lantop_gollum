@@ -21,7 +21,9 @@ URL
 
 相关说明(返回的JSON字段)
 ===
-+ **学习进度**: `courseProgress`  （int类型）
++ **作业数**: `coursewareCount` (int类型, URL参数type=1，为教师的时候，显示课件数)
++ **学习进度**: `courseProgress`  （int类型，百分比, URL参数type=2或不传的时候为学生，显示百分比）
+
 + **课件类型**: `type`  （1，课件; 2，习题；3，课件+习题）
 + **课件版本**: `version`  （int类型，如果大于本地，那么该课件为更新）
 + **课件习题的得分率**: `scoringAverage`  （如果课件类型为2，或3时需要用到此字段）
