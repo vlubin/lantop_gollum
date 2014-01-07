@@ -2,7 +2,7 @@
 
 URL
 ====
-[ex] http://192.168.100.48:1092/v3/course/27/coursewares?uid=5&from=0&t=89D8FA86DDE18B59&client=1
+[ex] http://192.168.100.48:1092/v3/course/27/coursewares?uid=5&from=0&t=89D8FA86DDE18B59&client=1&type=1
 
 ### 'http://192.168.100.48:1092/v3/course/{cid}/coursewares?uid=5&from=0&t=t&client=1'
 
