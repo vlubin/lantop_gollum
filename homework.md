@@ -21,8 +21,8 @@ URL
 
 相关说明
 ===
-+ **作业数**: homeworkCount` (int类型, URL参数=1，为教师的时候，显示作业数)
-+ **作业进度**: `homeworkProgress` (int类型，百分比, URL参数=2或不传的时候为学生，显示百分比)
++ **作业数**: homeworkCount` (int类型, URL参数type=1，为教师的时候，显示作业数)
++ **作业进度**: `homeworkProgress` (int类型，百分比, URL参数type=2或不传的时候(type=0)为学生，显示百分比)
 + **作业列表**: `homeworks` 
 
 作业列表字段如下：
