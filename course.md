@@ -2,7 +2,7 @@
 
 URL
 ====
-[ex] http://192.168.100.48:1092/v3/course/list/infos?uid=5&cid=28&from=0&t=89D8FA86DDE18B59&client=1
+[ex] http://192.168.100.48:1092/v3/course/list/infos?uid=5&cid=28&from=0&t=89D8FA86DDE18B59&client=1&type=1
 
 ###支持格式 `JSON`
 
@@ -12,6 +12,7 @@ URL
 ====
 
 + **用户ID**: `uid` 
++ **用户类型**: `type` (用户类型，1：教师；2或不传该参数时为学生)
 + **课程ID**: `cid`
 + **时间戳**: `from`   （Timestamp类型的）
 + **加密验证**：`t`  
@@ -53,7 +54,7 @@ URL
 
 URL
 ====
-[ex] http://192.168.100.48:1092/v3/course/myselected/list?uid=5&from=0&t=89D8FA86DDE18B59&client=1&search=英语
+[ex] http://192.168.100.48:1092/v3/course/myselected/list?uid=5&from=0&t=89D8FA86DDE18B59&client=1&search=英语&type=1
 
 ###支持格式 `JSON`
 
@@ -63,6 +64,7 @@ URL
 ====
 
 + **用户ID**: `uid` 
++ **用户类型**: `type` (用户类型，1：教师；2或不传该参数时为学生)
 + **时间戳**: `from`   （Timestamp类型的）
 + **加密验证**：`t`  
 + **客户端类型**: `client`  （1，Android; 2，iOS）
@@ -193,9 +195,9 @@ URL
 
 URL
 ====
-[ex] http://192.168.100.48:1092/v3/course/open/list/c0?uid=5&t=89D8FA86DDE18B59&p=1&order=0&client=1&search=英语&open=0
+[ex] http://192.168.100.48:1092/v3/course/open/list/c0?uid=5&t=89D8FA86DDE18B59&p=1&order=0&client=1&search=英语&open=0&type=1
 
-### URL格式 'http://192.168.100.48:1092/v3/course/open/list/c{category}?uid=5&t=89D8FA86DDE18B59&p=1&order=0&client=1'&search=英语&open=0
+### URL格式 'http://192.168.100.48:1092/v3/course/open/list/c{category}?uid=5&t=89D8FA86DDE18B59&p=1&order=0&client=1'&search=英语&open=0&type=1
 
 ###支持格式 `JSON`
 
@@ -205,6 +207,7 @@ URL
 ====
 
 + **用户ID**: `uid` 
++ **用户类型**: `type` (用户类型，1：教师；2或不传该参数时为学生)
 + **课程分类ID**: `category` （如果为0，取全部）
 + **加密验证**：`t`  
 + **分页页码**：`p` ，从1开始 
@@ -228,7 +231,7 @@ URL
 
 URL
 ====
-[ex] http://192.168.100.48:1092/v3/course/other/list?uid=5&fid=12&p=1&from=0&t=89D8FA86DDE18B59&client=1
+[ex] http://192.168.100.48:1092/v3/course/other/list?uid=5&fid=12&p=1&from=0&t=89D8FA86DDE18B59&client=1&type=1
 
 ###支持格式 `JSON`
 
@@ -239,6 +242,7 @@ URL
 
 + **用户ID**: `uid` 
 + **好友ID**: `fid` 
++ **用户类型**: `type` (好友的类型，1：教师；2或不传该参数时为学生)
 + **时间戳**: `from`   （Timestamp类型的）
 + **加密验证**：`t`  
 + **分页页码**：`p` ，从1开始 
