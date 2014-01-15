@@ -70,5 +70,13 @@ private static String msgPattern = "{\"aps\":{\"alert\":{\"body\":\"%1$s\",\"tit
 2. t=3,param=课程ID,课件ID
 
 
+测试链接：
+
+http://192.168.100.48:1092/v3/push/course/modify?course=691&api=123456
+
+
+http://192.168.100.48:1092/v3/push/courseware/modify?courseware=1&api=123456
+
+
 
 
