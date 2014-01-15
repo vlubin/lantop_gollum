@@ -77,6 +77,8 @@ http://192.168.100.48:1092/v3/push/course/modify?course=691&api=123456
 
 http://192.168.100.48:1092/v3/push/courseware/modify?courseware=1&api=123456
 
+http://192.168.100.48:1092/v3/push/msg/add?message=20334&sender=12&receiver=154&key=lantop%40123456
+
 
 
 
