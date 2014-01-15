@@ -81,7 +81,9 @@ URL
 
 URL
 ====
-[ex] http://192.168.100.48:1092/v3/sns/act/topic/11713/delete?uid=154&t=
+[ex] http://192.168.100.48:1092/v3/sns/act/topic/11713/delete?uid=5&t=89D8FA86DDE18B59&client=1&type=1
+
+'http://192.168.100.48:1092/v3/sns/act/topic/{topic}/delete?uid=5&t=89D8FA86DDE18B59&client=1&type=1'
 
 ###支持格式 `JSON`
 
@@ -91,7 +93,10 @@ URL
 ====
 
 + **用户ID**: `uid` 
++ **用户类型**：`type`  （1，老师；2或不传为学生）
++ **话题ID**：`topic`  
 + **加密验证**：`t`  
++ **客户端类型**：`client`  （1，android; 2,IOS）
 
 相关说明
 ===
