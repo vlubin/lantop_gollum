@@ -66,8 +66,9 @@ push内容：
 private static String msgPattern = "{\"aps\":{\"alert\":{\"body\":\"%1$s\",\"title\":\"%2$s\"},\"badge\":1},\"wkt\":{\"t\":\"%3$s\",\"param\":\"%4$s\"}}";
 
 其中param的注解：
-t=2,param=课程ID
-t=3,param=课程ID,课件ID
+1. t=2,param=课程ID
+2. t=3,param=课程ID,课件ID
+
 
 
 
